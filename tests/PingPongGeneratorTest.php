@@ -16,8 +16,22 @@
 
             //Assert
             $this->assertEquals("ping", $result[3]);
-
         }
+
+        // test that the fifth number returns "pong"
+        function test_make5toPing()
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 30;
+
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+
+            //Assert
+            $this->assertEquals("pong", $result[5]);
+        }
+
 
     }
  ?>

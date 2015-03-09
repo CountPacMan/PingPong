@@ -8,7 +8,10 @@ class PingPongGenerator {
         for ($i = 1; $i < $input; $i++) {
             if ($i % 3 == 0) {
                 $output[$i] = "ping";
-            } else {
+            } elseif ($i % 5 == 0) {
+                $output[$i] = "pong";
+            }
+            else {
                 $output[$i] = $i;
             }
         }
