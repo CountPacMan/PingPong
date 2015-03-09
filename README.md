@@ -1,8 +1,8 @@
-# Title Case for Epicodus
+# Ping Pong for Epicodus
 ## by Daniel Toader and James Nielson
 ### Date: March 09, 2015
 #### Description
-The Title Case program capitalizes the first letter of all words in a multiple-word title. For example, we expect it to change the color purple to The Color Purple.
+The Ping Pong program asks the user for a number and returns a page printing out all the numbers from 1 to the number they entered. Numbers divisible by 3 are replaced by "ping" and numbers divisible by 5 are replaced by "pong". Numbers divisble by both 3 and 5 are replaced by "ping-pong".
 
 #### Setup instructions
 1. Clone this git repository
@@ -21,4 +21,4 @@ The Title Case program capitalizes the first letter of all words in a multiple-w
 - PHP (tested to run on PHP ver 5.6.6)
 - Silex ver 1.2.3
 - Twig ver 1.18.0
-- PHPUnit
+- PHPUnit 4.5.0
