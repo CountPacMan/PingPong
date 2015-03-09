@@ -1,6 +1,6 @@
 <?php
   require_once __DIR__."/../vendor/autoload.php";
-  require_once __DIR__."/../src/TitleCaseGenerator.php";
+  require_once __DIR__."/../src/PingPongGenerator.php";
 
   $app = new Silex\Application();
   $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
@@ -10,10 +10,10 @@
   });
 
   $app->post("/generate", function() use ($app) {
-    $title = $_POST['title'];
-    $newTitleCase = new TitleCaseGenerator();
-    $generated = $newTitleCase->makeTitleCase($title);
-    return $app['twig']->render('generate.twig', array('title' => $title, 'generated' => $generated));
+    $number = $_POST['number'];
+    $newPingPong = new PingPongGenerator();
+    $generated = $newPingPong->generatePingPongArray($number);
+    return $app['twig']->render('generate.twig', array('number' => $number, 'generated' => $generated));
   });
 
   return $app;
