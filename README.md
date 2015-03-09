@@ -6,7 +6,7 @@ The Ping Pong program asks the user for a number and returns a page printing out
 
 #### Setup instructions
 1. Clone this git repository
-2. Set your localhost root folder to ~/TitleCase/web/
+2. Set your localhost root folder to ~/PingPong/web/
 3. Ensure PHP server is running.
 4. Start the web app by pointing your browser to the root (http://localhost:8000/)  
 
